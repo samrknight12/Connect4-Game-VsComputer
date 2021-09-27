@@ -78,7 +78,7 @@ def isWinner(bo, num):
 def playerMove(board):
     run = True
     while run:
-        moveCol = input("Select a Column Position for an (1-7): ")
+        moveCol = input("Select a Column Position (1-7): ")
 
         try:
             # try to convert input to int so we know its a number
@@ -219,7 +219,7 @@ def main():
             if (isWinner(board, COMP) == True):
                 # if they lost game over varible changed to end loop
                 gameover = True
-                print("You Lose :( )")
+                print("You Lose :( ")
                 break
             else:
                 # if they didnt lose, go to player move function for input and place their move
