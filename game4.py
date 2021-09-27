@@ -174,7 +174,7 @@ def scorePos(board, num):
 
 # Base function for computers location choice
 def bestMove(board, num):
-    bestScore = 0
+    bestScore = -1000
     # find all playable columns
     goodLocation = playablePlaces(board)
     #randomly choose one for initalization of bestCol
